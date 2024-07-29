@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+## Breaking down the board into smaller bits
+ 
+
+ the goal of the board is to manage your todos, and make your task management super easy and fluent
+1)we have multiple  statuses for the todo like: Todo, In-Progress, Under Review and Finished
+2)on top of this we can allocate tags to each task like urgent, medium and low 
+3)We can drag and drop the task across these various column containers of Statuses (Todo, In-Progress, Under Review and Finished)
+4)We can edit them 
+
+
+structure of a typical new task created:
+{
+    title: string,
+    priority: string,
+    deadline: Date
+    description: string
+    time created: curr time - time of creation
+}
+
